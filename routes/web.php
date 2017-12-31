@@ -11,20 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/users', function () {
-    $users = [
-        '0' => [
-            'first_name' => 'Renato',
-            'last_name' => 'Hysa',
-        ],
-        '1' => [
-            'first_name' => 'Jessica',
-            'last_name' => 'Alba',
-        ]
-    ];
-    return $users;
-});
+Route::get('/', 'StaticPagesController@home');
+Route::get('/help', 'StaticPagesController@help');
+Route::get('/about', 'StaticPagesController@about');
