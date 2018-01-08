@@ -7,6 +7,8 @@
                 <section class="status_form">
                     @include('shared._status_form')
                 </section>
+                <h3>微博列表</h3>
+                @include('shared._fedd')
             </div>
             <aside class="col-md-4">
                 <section class="user_info">
